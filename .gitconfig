@@ -12,7 +12,7 @@
   ci = commit
   st = status
   br = branch
-  hist = log --decorate --pretty=format:\"%C(blue)%h %C(red)%ad %Creset-- %s%d %Cgreen[%an]\" --date=short 
+  hist = log --decorate --pretty=format:\"%C(blue)%h %C(red)%ad %Creset-- %s%d %Cgreen[%an]\" --date=short
   type = cat-file -t
   dump = cat-file -p
   repull = pull --rebase
