@@ -16,6 +16,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-surround'
+Bundle 'rking/ag.vim'
 
 filetype plugin indent on     " required!
 runtime macros/matchit.vim
