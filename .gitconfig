@@ -1,0 +1,31 @@
+[user]
+  name = Jaco le Roux
+  email = jleroux@amazon.com
+[core]
+  autocrlf = input
+  safecrlf = true
+  pager = cat
+  excludesfile = ~/.gitignore_global
+  editor = vim
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --decorate --pretty=format:\"%C(blue)%h %C(red)%ad %Creset-- %s%d %Cgreen[%an]\" --date=short 
+  type = cat-file -t
+  dump = cat-file -p
+  repull = pull --rebase
+  destroy = reset --hard
+  deld = ls-files -d
+  modd = ls-files -m
+  dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+[receive]
+  denyCurrentBranch = ignore
+  denyDeleteCurrent = ignore
+[push]
+  default = simple
+[color]
+  ui = true
+[credential]
+  helper = cache
